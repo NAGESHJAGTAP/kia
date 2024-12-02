@@ -9,22 +9,40 @@
             margin: 0px;
             padding: 0px;
         }
-      .nevbar{
-       display: flex;
-       flex-direction: row;
-       /* justify-content: space-around; */
-       align-content: flex-start;
-       margin-top: -854px;
-       color: white;
-    margin-left: 50px;
-     padding-left: 50px;
-      }
-      .nev{
+      
+        .nevbar { display: flex; 
+        flex-direction: row;
+        align-content: flex-start; 
+        color: white;
+        padding-left: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black; 
+        /* z-index: 1000; */
+         }
+                 
+        .navbar2 {
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: auto; 
+        margin-right: 50px;
+        }
+        .logo {
+        margin-left: 188px; 
+        font-size: 30px; 
+         } 
+        .nev {
         margin: 30px;
-      }
+       } 
+      .content {
+      margin-top: 100px;
+     }
       .price{
-        margin-left: 480px;
-        margin-top:590px ;
+        margin-left: 200px;
+        margin-top:120px ;
       }
       .pricestart{
         margin-top: -154px;
@@ -48,6 +66,9 @@
         margin-left: 91px;
         margin-top: -47px;
       }
+      .para2{
+        margin-left: 121px;
+      }
       .seltos5{
         margin-top: -177px;
         margin-left: 366px;
@@ -64,7 +85,8 @@
         margin-top: -741px;
       }
       #ex{
-        margin-left: 350px;
+        margin-left: 382px;
+        margin-top: -30px;
       }
       .color{
   margin-top: 705px;
@@ -104,14 +126,30 @@
        color: white;
        font-size: 15px;
     }
-      
+    .nevbarhr{
+     color: black;
+
+    }
+    .navbarhr{
+    background-color: #ddd;
+    color: black;
+    }
+    hr{
+      width: 100%;
+      color: rgb(19, 7, 110);
+    }
+    .video{
+      pointer-events:none;
+    }
     </style>
 </head>
 <body>
-    <div>
-        
-        <video src="seltos.mp4" height="25%" width="100%" controls autoplay loop muted ></video>
-        <div class="nevbar"> 
+  
+ 
+        <div class="video">  
+        <video src="seltos.mp4" height="25%" width="100%"controls autoplay loop muted ></video>
+        </div>
+        <!-- <div class="nevbar"> 
         <li type="none" class="nev">SONET</li>
         <li type="none" class="nev">CARENS</li>
         <li type="none" class="nev">SELTOS</li>
@@ -119,18 +157,38 @@
         <li type="none" class="nev">CARNIVAL</li>
         <li type="none" class="nev">EV9</li> 
         <li type="none" class="nev">SYROS</li> 
-    </div><hr>
-    <div class="price">  
+    </div> -->
+   
+    <nav>
+       
+    <div class="nevbar"> 
+      <li type="none" class="nev">Cars</li>
+      <li type="none" class="nev">Buy</li>
+      <li type="none" class="nev">Owners</li>
+      <li type="none" class="nev">VR Showroom</li> 
+      
+   <div class="logo">
+    <li type="none" class="nev">KIA</li>
+   </div>
+
+      <div class="navbar2">
+        <li type="none" class="nev">Kia Connect 2.0</li>
+        <li type="none" class="nev">Discover Kia</li>
+        <li type="none" class="nev">Find a Dealer</li>
+      </div>
+
+
+      
+  </div>
+</nav>
+    <!-- <div class="price">  
     <h1 style="color: white; font-size: 50px;" >Kia Seltos</h1>
     <h2 style="color: white; font-size: 25; font-weight: 20px;">Tech is now Badass.</h2>
    </div>
    <div class="pricestart">   
     <p style="font-size: 40px;">price starts at <br>₹10 89 900 <sup>#</sup></p>
      <div id="ex"><p>#T&C Apply. Ex-showroom price all India</p></div>
-    <!-- <h1>R 799900</h1> -->
-     <div>
-     </div>
-    </div>
+    </div> -->
     </div>
     <div class="Disclaimer">  
         <p>Disclaimer: The actions and stunts are performed under supervision and professionals in a controlled environment. Please do not imitate.</p>
@@ -201,7 +259,9 @@
     </div> 
 </div>
 <div>
+  <div class="video">  
     <video src="explore_d.mp4" height="25%" width="100%" controls autoplay loop muted ></video>
+  </div>
     <div class="value">
         <p>Sequential LED Turn <br> indicators</p>
         <p>R-18(46.20 cm) Crystal-Cut <br> Glossy Black Alloy Wheels</p>
@@ -210,6 +270,16 @@
         <p>Dual-Zone Fully Automatic <br>Air Conditioner</p>
         <p>26.03cm (10.25")HD <br>Touchscreen AVNT + full <br> Digital Cluster with26.04 cm(10.25") color LCD MID </p>
     </div>
+</div>
+<div>
+  <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/KIA_Seltos_KV_1920.jpg" height="%" width="100%" alt="">
+</div>
+<div>
+  <div class="para2">
+    <p>GRAVITY</p>
+    <h1>Take Off Like a Badass.</h1>
+    <p>The Seltos Gravity Variant is here to redefine what it means to drive with purpose. Bold, powerful, and equipped with cutting-edge <br> features, this edition is designed for those who rise above the rest.​</p>
+</div>
 </div>
 
 </body>
