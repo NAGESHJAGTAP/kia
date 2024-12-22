@@ -19,9 +19,21 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: black; 
-        /* z-index: 1000; */
+        background-color: transparent; 
+        z-index: 1000;
+        cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease; 
+    border-bottom: 0.1px solid white;
+   
          }
+
+
+   .nevbar:hover {
+    color:black; 
+    background-color: white; 
+    border-bottom: 0.1px solid white;
+   
+  }
                  
         .navbar2 {
         display: flex; 
@@ -29,9 +41,10 @@
         justify-content: flex-end;
         margin-left: auto; 
         margin-right: 50px;
+        
         }
         .logo {
-        margin-left: 188px; 
+        margin-left: 16.188rem; 
         font-size: 30px; 
          } 
         .nev {
@@ -40,15 +53,24 @@
       .content {
       margin-top: 100px;
      }
+     .buttonbook{
+      margin-top: 10px;
+      margin-left: 5px;
+      height: px;
+      width: px;
+     }
       .price{
-        margin-left: 200px;
-        margin-top:120px ;
-      }
+        margin-left: 519px;
+         margin-top: -208px;
+         
+}
+    
       .pricestart{
-        margin-top: -154px;
+        margin-top: -140px;
         margin-left: 770px;
         color: white;
       }
+     
       .Disclaimer{
         margin-top: 100px;
         margin-left: 91px;
@@ -56,7 +78,6 @@
       .regi{
         margin-left: 235px;
         margin-top: -59px;
-       
       }
       .regi2{
         margin-left: 932px;
@@ -67,7 +88,7 @@
         margin-top: -47px;
       }
       .para2{
-        margin-left: 121px;
+        margin-left: 55px;
       }
       .seltos5{
         margin-top: -177px;
@@ -141,6 +162,385 @@
     .video{
       pointer-events:none;
     }
+    .video2{
+      pointer-events:none;
+    }
+    .auto{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+     
+    }
+    .autoall{
+      border-left: 1px solid gray;
+      border-right: 1px solid gray;
+      padding: 20px;
+    
+    }
+  
+
+.slider-frame {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.side_image {
+  display: flex;
+  width: 500%; 
+  animation: changeImage 10s steps(5) infinite; 
+}
+
+
+.img-container {
+  width: 20%; 
+  flex-shrink: 0; 
+  overflow: hidden;
+}
+
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+@keyframes changeImage {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+.form-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1480px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.otp-btn, .verify-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.otp-btn:hover, .verify-btn:hover {
+  background-color: #bbb;
+}
+
+.timer {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+.full-width {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.submit-row {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.knowbutton button {
+  font-size: 18px;
+  margin-left: 65px;
+  padding: 15px 30px; 
+  border-radius: 5px; 
+  background-color: black; 
+  color: white;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.knowbutton button:hover {
+  background-color: white; 
+  color: black;
+  border:1px solid black;
+}
+.selton-new{
+  margin-top:30px ;
+}
+.seltoninfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+.info{
+  border: 1px ;
+  background-color: #f0f1f3;
+  padding: 36px;
+  font-size: 17px;
+}
+.paragraph{
+  margin-left: 70px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} 
+.allsel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.read{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container {
+ max-width: 400px;
+margin: auto;
+background-color: #fff;
+ border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+}
+.header {
+ background-color: #001627;
+ color: white;
+padding: 20px;
+ text-align: center;
+}
+.header h1 {
+ margin: 0;
+font-size: 24px;
+}
+.header p {
+ margin: 5px 0 0;
+  font-size: 16px;
+} .colors {
+ display: flex;
+justify-content: center;
+ padding: 10px;
+   gap: 10px;
+  }
+.color-circle {
+  width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   border: 1px solid #ddd;
+  } .color1 { background-color: #282a63; }
+ .color6 { background-color: #4a5d40; }
+  .color3 { background-color: #9a2424; }
+  .color4 { background-color: #2e2e2e; }
+  .color5 { background-color: #e4e4e4; }
+
+  .features {
+  padding: 20px;
+  }
+  .features ul {
+  list-style: none;
+  padding: 0;
+   margin: 0;
+  }
+.features li {
+margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+ .footer {
+   text-align: center;
+  padding: 20px;
+  font-weight: bold;
+   border-top: 1px solid #ddd;
+ }
+ .maincontainer{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top: 30px;
+ }
+ .companylogo{
+  margin-left: 52px;
+ }
+ .footer h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.nevbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nevbarsec {
+  background-color: black; 
+  color: white;
+}
+.nevbarthr {
+  background-color: white ; 
+  color: black;
+}
+
+
+.smallfoot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color:black;
+  color: white;
+   height: 60px;
+   align-items: center;
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-button{
+  position: absolute;
+  width: 168px;
+  height: 48px;
+  margin-top: 20px;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  padding: 10px , 20px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.image-button2{
+  position: absolute;
+  width: 168px;
+  height: 48px;
+  margin-top: 80px;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  padding: 10px , 20px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.image-button:hover{
+  background-color: black;
+  color: white;
+}
+
+.range-button{
+  position: absolute;
+  /* position: relative; */
+  transform: translate(-50%, -50%);
+  color: rgb(255, 0, 0);
+  background-color: #ff0000;
+  margin-left: -755px;
+  margin-top: 43%;
+  width: 95%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+   
+
+
     </style>
 </head>
 <body>
@@ -148,17 +548,9 @@
  
         <div class="video">  
         <video src="seltos.mp4" height="25%" width="100%"controls autoplay loop muted ></video>
+        <button class="image-button">Book Now</button>
+        <button class="image-button2">Experience in VR</button>
         </div>
-        <!-- <div class="nevbar"> 
-        <li type="none" class="nev">SONET</li>
-        <li type="none" class="nev">CARENS</li>
-        <li type="none" class="nev">SELTOS</li>
-        <li type="none" class="nev">EV6</li>
-        <li type="none" class="nev">CARNIVAL</li>
-        <li type="none" class="nev">EV9</li> 
-        <li type="none" class="nev">SYROS</li> 
-    </div> -->
-   
     <nav>
        
     <div class="nevbar"> 
@@ -176,19 +568,23 @@
         <li type="none" class="nev">Discover Kia</li>
         <li type="none" class="nev">Find a Dealer</li>
       </div>
-
-
-      
-  </div>
+      </div>
 </nav>
-    <!-- <div class="price">  
-    <h1 style="color: white; font-size: 50px;" >Kia Seltos</h1>
-    <h2 style="color: white; font-size: 25; font-weight: 20px;">Tech is now Badass.</h2>
+
+
+    <div class="price">  
+    <!-- <h1 style="color: white; font-size: 50px;" ></h1>
+    <p style="color: white; font-size: 25px; font-weight: 20px;">Tech is now Badass.</p> --> 
+    <p style="font-size: 40px; color: white;">Kia Seltos<br><span style="font-size: 25px;">Tech is now Badass.</span></small></p>
    </div>
    <div class="pricestart">   
     <p style="font-size: 40px;">price starts at <br>₹10 89 900 <sup>#</sup></p>
      <div id="ex"><p>#T&C Apply. Ex-showroom price all India</p></div>
-    </div> -->
+    </div>
+
+
+
+  </div>
     </div>
     <div class="Disclaimer">  
         <p>Disclaimer: The actions and stunts are performed under supervision and professionals in a controlled environment. Please do not imitate.</p>
@@ -259,9 +655,12 @@
     </div> 
 </div>
 <div>
-  <div class="video">  
+  <div class="video2">  
     <video src="explore_d.mp4" height="25%" width="100%" controls autoplay loop muted ></video>
+    <input class="range-button" type="range" name="range" id="range" value="20" step="20">
   </div>
+
+
     <div class="value">
         <p>Sequential LED Turn <br> indicators</p>
         <p>R-18(46.20 cm) Crystal-Cut <br> Glossy Black Alloy Wheels</p>
@@ -276,13 +675,825 @@
 </div>
 <div>
   <div class="para2">
-    <p>GRAVITY</p>
+    <h3 style="color: gray;">GRAVITY</h3>
     <h1>Take Off Like a Badass.</h1>
     <p>The Seltos Gravity Variant is here to redefine what it means to drive with purpose. Bold, powerful, and equipped with cutting-edge <br> features, this edition is designed for those who rise above the rest.​</p>
 </div>
+<div class="auto">  
+<div class="autoall">
+  <h4>Auto Hold Electronic Parking Brake (EPB)  </h4>
+  <p>Effortless parking with no second guessing to lock in with <br> confidence.</p>
+</div>
+<div class="autoall">
+  <h4>BOSE Premium Sound System with 8 Speakers</h4>
+  <p>Immerse yourself in crystal-clear sound that matches your <br> drive’s intensity.</p>
+</div>
+<div class="autoall">
+  <h4>Ventilated Front Seats</h4>
+  <p>Unparalleled comfort, designed for every bold adventure.</p>
+</div>
+</div>
+<div class="slider-frame">
+<div class="side_image">
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-EPB.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-Bose.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-Ventilated.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-Intutive.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-Dash.jpg" height="25%" width="100%" alt="">
+  </div>
+</div>
 </div>
 
+
+
+
+<div class="para2">
+  <h3 style="color: gray;"> All-new HTK+</h3>
+  <h1>Drive with the edge of Badass innovation and luxury.</h1>
+  <p>Redefining the segment with tech-driven luxury, the 2024 Kia Seltos HTK+ embodies the true spirit of <br>
+    the Badass. Decked out with cutting-edge features and an audacious attitude, it’s not just about driving; it’s about <br> dominating the road.​</p>
+</div>
+<div class="auto">  
+<div class="autoall">
+<h4>Dual-Pane Panoramic Sunroof  </h4>
+<p>Redefine your perspective with scenic views that bring the <br> world to you.</p>
+</div>
+<div class="autoall">
+<h4>Star Map LED-Connected Tail Lamps</h4>
+<p>Illuminate paths with distinctively designed lights that demand <br> attention.</p>
+</div>
+<div class="autoall">
+<h4>Aurora Black Pearl Color Scheme</h4>
+<p>Stand out in sophisticated black that adds elegance to your <br> adventurous rides.</p>
+</div>
+</div>
+
+
+
+
+<div class="slider-frame">
+  <div class="side_image">
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/seltos/htk/HTK-1.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/seltos/htk/HTK-3.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/seltos/htk/HTK-4.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/Carens/x-line/seltos/htk/HTK-2.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/gravity/SE-Dash.jpg" height="25%" width="100%" alt="">
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <div class="para2">
+    <h3 style="color: gray;"> X-Line</h3>
+    <h1>Level up with the badass.</h1>
+    <p>The Seltos X-Line exudes confidence and power with its bold and aggressive design. <br>
+      Equipped with advanced features and offering an exhilarating driving experience, the new Seltos X-Line is designed to <br> inspire and empower.​​</p>
+  </div>
+  <div class="auto">  
+  <div class="autoall">
+  <h4>Signature Tiger Nose Grill-Matte Graphite </h4>
+  <p>With its striking appearance and powerful stance, the <br> Signature Tiger Nose Grille has been reincarnated to command <br> attention.</p>
+  </div>
+  <div class="autoall">
+  <h4>R-18 (46.20 cm) Crystal-Cut Glossy Black Alloy <br> Wheels</h4>
+  <p>The assertive crystal-cut alloy wheels of the new Seltos elevate <br> its impressive appearance to newer heights.</p>
+  </div>
+  <div class="autoall">
+  <h4>Dual Sports Exhaust (G1.5 T- Gdi)</h4>
+  <p>With its newly added dual exhaust system, the Seltos X-Line <br> now boasts a sportier look and sound.</p>
+  </div>
+  </div>
+
+
+
+  <div class="slider-frame">
+    <div class="side_image">
+  <div class="img-container">
+   <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-1-pc.jpg" height="25%" width="100%" alt="">
+  </div>
+     <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-2-pc.jpg" height="25%" width="100%" alt="">
+    </div>
+  <div class="img-container">
+   <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-3-pc.jpg" height="25%" width="100%" alt="">
+    </div>
+  <div class="img-container">
+   <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-4-pc.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+    <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-5-pc.jpg" height="25%" width="100%" alt="">
+  </div>
+  <div class="img-container">
+   <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos/x-line/slide-6-pc.jpg" height="25%" width="100%" alt="">
+  </div>
+    </div>
+    </div>
+
+
+    <form class="form-container">
+      <h1>Show Interest</h1>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="salutation">Salutation</label>
+          <select id="salutation" name="salutation">
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Ms.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number</label>
+          <input type="text" id="mobile-number" name="mobile-number" placeholder="Mobile Number">
+          <button type="button" class="otp-btn">Send OTP</button>
+        </div>
+        <div class="form-group">
+          <label for="mobile-otp">Mobile OTP</label>
+          <input type="text" id="mobile-otp" name="mobile-otp" placeholder="Mobile OTP">
+          <button type="button" class="verify-btn">Verify</button>
+          <span class="timer">3:00 Min.</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="model">Select a Model</label>
+          <select id="model" name="model">
+            <option>SELTOS</option>
+       </select>
+    </div>
+    <div class="form-group">
+       <label for="state">Select a State</label>
+     <select id="state" name="state">
+     <option>Select a State</option>
+    </select>
+    </div>
+  </div>
+  <div class="form-row">
+   <div class="form-group">
+    <label for="city">Select a City</label>
+     <select id="city" name="city">
+     <option>Select a City</option>
+    </select>
+    </div>
+   <div class="form-group">
+     <label for="dealer">Select a Dealer</label>
+       <select id="dealer" name="dealer">
+     <option>Select a Dealer</option>
+     </select>
+   </div>
+   </div>
+   <div class="form-row">
+  <div class="form-group full-width">
+    <input type="checkbox" id="terms" name="terms">
+  <label for="terms">I accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</label>
+          
+        </div>
+      </div>
+      <div class="form-row submit-row">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+
+
+
+    <div class="para2">
+      <h3 style="color: gray;"> Exterior</h3>
+      <h1>Make a powerful statement</h1>
+      <p>Experience the bold new design of the Kia Seltos, exuding style and attitude. Its aggressive, muscular build, athletic shoulder lines, and <br> stylized front and rear showcase its robust character. Get in and conquer any road.​​</p>
+    </div>
+    <div class="auto">  
+    <div class="autoall">
+    <h4>Distinctive Star Map LED Connected Tail Lamps </h4>
+    <p>Drawing inspiration from the cosmic tapestry above, the <br> distinctive Star Map LED Tail Lamps of the Seltos set new <br> standards for cutting-edge design.</p>
+    </div>
+    <div class="autoall">
+    <h4>Striking R18 (46.20 cm) Crystal Cut Glossy Black <br> Alloy Wheels</h4>
+    <p>Elevate your style quotient with the Seltos' Striking R18 Crystal <br> Cut Alloy Wheels crafted with precision and featuring a glossy <br> black finish to turn heads and conquer roads with an assertive <br> spirit.</p>
+    </div>
+    <div class="autoall">
+    <h4>Dazzling Crown Jewel LED Headlamps with Star Map LED DRLs & Star Map <br> Sweeping LED Light Guide</h4>
+    <p>The Seltos' Dazzling Crown Jewel LED Headlamps illuminate <br> your path and create a captivating visual symphony. Sweeping <br> Star Map LED Daytime Running Lights bring celestial <br> companions to life, turning every drive into an artful journey.</p>
+    </div>
+    </div>
+
+  
+  
+
+    <div class="slider-frame">
+      <div class="side_image">
+        <div class="img-container">
+          <div class="video2">  
+          <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/exterior/video/TailLampDesktop.mp4"  width="100%" controls autoplay loop muted ></video>
+        </div>
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/exterior/e2.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/exterior/e1.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/exterior/e4.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/exterior/ek_d.jpg" height="25%" width="100%" alt="">
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="para2">
+        <h3 style="color: gray;"> Interior</h3>
+        <h1>Exquisitely designed, inside out.</h1>
+        <p>With its awe-inspiring interiors boasting stylish and edgy design, along with generous space for supreme comfort, the redefined new Kia <br> Seltos becomes your ultimate travel companion. <br>
+          Parking Brake, Smart Pure Air Purifier with virus and bacteria protection, and Bose Premium Sound System with 8 Speakers, it redefines <br> your driving experience with unparalleled comfort.​​</p>
+      </div>
+      <div class="auto">  
+      <div class="autoall">
+      <h4>Awe-inspiring Dual Pane Panoramic Sunroof </h4>
+      <p>Experience immersive journeys with Seltos' Dual Pane <br> Panoramic Sunroof. Two expansive glass panels make the sky <br> your companion, elevating every drive with wonder and <br> freedom.</p>
+      </div>
+      <div class="autoall">
+      <h4>Intuitive 26.03 cm (10.25’’) HD Touchscreen <br> Navigation + Full Digital Cluster with 26.04 cm <br> (10.25”) Color LCD MID</h4>
+      <p>Explore limitless possibilities with the Intuitive 26.03 cm HD <br> Touchscreen and Digital Cluster. Dual panoramic screens <br> immerse you in information and entertainment, captivating and <br> functional at your fingertips.</p>
+      </div>
+      <div class="autoall">
+      <h4>Comfortable Front Ventilated Seats with 8-way <br> Power Driver’s Seat</h4>
+      <p>Indulge in luxury with Comfortable Front Ventilated Seats. <br> Experience continuous airflow and embrace comfort, <br> transforming each drive into rejuvenation.</p>
+      </div>
+      </div>
+  
+
+
+      <div class="slider-frame">
+        <div class="side_image">
+          <div class="img-container">
+            <div class="video2">  
+            <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/interior/video/sunroof.mp4"  width="100%" controls autoplay loop muted ></video>
+          </div>
+        </div>
+          <div class="img-container">
+            <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/interior/video/dual-dashboard.mp4"  width="100%" controls autoplay loop muted ></video>
+          </div>
+          <div class="img-container">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/interior/power-drive-seat.jpg" height="25%" width="100%" alt="">
+          </div>
+          <div class="img-container">
+            <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/interior/video/airflow.mp4"  width="100%" controls autoplay loop muted ></video>
+          </div>
+          <div class="img-container">
+            <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/interior/video/dual-dashboard.mp4"  width="100%" controls autoplay loop muted ></video>
+          </div>
+        </div>
+        </div>
+
+        <div class="para2">
+          <h3 style="color: gray;"> POWER & PERFORMANCE</h3>
+          <h1>Unrivaled Power & Performance</h1>
+          <p>The new Kia Seltos delivers dynamic performance, elevating your driving experience. With advanced, powerful, and fuel-efficient engine <br> options, it offers ultimate power and performance, empowering you to hit the road on your own terms.​​</p>
+        </div>
+        <div class="auto">  
+        <div class="autoall">
+        <h4>Powerful Smartstream G1.5 T-GDi Petrol Engine</h4>
+        <p></p>
+        </div>
+        <div class="autoall">
+        <h4>Advanced Smartstream G1.5 Petrol Engine</h4>
+        <p></p>
+        </div>
+        <div class="autoall">
+        <h4>Refined 1.5l CRDi VGT Diesel Engine</h4>
+        <p></p>
+        </div>
+        </div>
+
+
+
+
+
+
+        <div class="slider-frame">
+          <div class="side_image">
+        <div class="img-container">
+         <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/1.1.jpg" height="25%" width="100%" alt="">
+        </div>
+           <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/2.jpg" height="25%" width="100%" alt="">
+          </div>
+        <div class="img-container">
+         <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/3.jpg" height="25%" width="100%" alt="">
+          </div>
+        <div class="img-container">
+         <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/1.1.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/2.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+         <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/performance/3.jpg" height="25%" width="100%" alt="">
+        </div>
+          </div>
+          </div>
+
+
+
+
+          <div class="para2">
+            <h3 style="color: gray;"> iMT</h3>
+            <h1>Badass 2.0 meets future of Manual Transmission</h1>
+            <p>Switch to the tech that inspires with the new Seltos. The Badass comes equipped with the convenient, fun, and exciting iMT <br> technology that offers you hassle-free drive every time you hit the road.​​</p>
+          </div>
+          <div class="knowbutton">
+            <button type="submit" class="">Know More</button>
+          </div>
+          
+          </div>
+
+          <div class="selton-new">
+            <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/imt.jpg" height="25%" width="100%" alt="">
+          </div>
+
+
+          <div class="para2">
+            <h3 style="color: gray;"> CONNECTED CAR TECHNOLOGY</h3>
+            <h1>Take Control Like a boss.</h1>
+            <p>The new Kia Seltos offers integrated home-to-car connectivity through the Next-gen Kia Connect app.With Alexa and Google Voice <br> Assistant, you can control your car using the app on your smartwatch or smartphone.Enjoy over 60 smart connected features for a fun <br> and convenient drive.​​</p>
+          </div>
+          <div class="auto">  
+          <div class="autoall">
+          <h4>Voice Controlled Window Function </h4>
+          <p>Experience the future of control with Voice Controlled Window <br> Function. A simple command brings the world to your <br> fingertips, making every journey effortless and truly hands- <br>free.</p>
+          </div>
+          <div class="autoall">
+          <h4>Remote AC Control</h4>
+          <p>With Remote AC Control in the Seltos, your comfort begins the <br> moment you step in, helping you stay ahead of the weather for <br> a more welcoming experience.</p>
+          </div>
+          <div class="autoall">
+          <h4>Kia Connect Skill with Amazon Alexa</h4>
+          <p>With the integration of home-to-car connectivity with Alexa <br> and Googe Voice Assistant through the Next-gen Kia Connect, <br> the Seltos delivers an effortlessly badass ownership experience <br> in-sync with your lifestyle.</p>
+          </div>
+          </div>
+
+
+
+          
+<div class="slider-frame">
+  <div class="side_image">
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/connect/cd-ota-map.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/connect/cd-voice-controlled-window.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/connect/cd-remote-ac-control.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/connect/cd-alexa.jpg" height="25%" width="100%" alt="">
+    </div>
+    <div class="img-container">
+      <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/connect/cd-voice-controlled-window.jpg" height="25%" width="100%" alt="">
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  
+
+  <div class="para2">
+    <h3 style="color: gray;"> ADAS LEVEL 2</h3>
+    <h1>Safety maximized with intelligent ADAS Level 2</h1>
+    <p>The new Seltos enhances situational awareness by detecting vehicles, bicycles, and pedestrians using advanced sensing technology. It <br> actively prevents collisions, ensures pedestrian safety, and offers a safer, more intuitive, and rewarding driving experience with its <br> Advanced Driver Assistance System (ADAS) consisting of 19 Autonomous Level 2 features.​​</p>
+  </div>
+  <div class="auto">  
+  <div class="autoall">
+  <h4>Smart Cruise Control with Stop and Go </h4>
+  <p>Smart Cruise Control with Stop and Go empowers you for <br> effortless, stress-free travel on highways and urban streets.</p>
+  </div>
+  <div class="autoall">
+  <h4>Blind Spot Collision Warning</h4>
+  <p>The Blind Spot Collision Warning system keeps you informed <br> and secure on the road. It's not just a feature; it's your invisible <br> co-pilot, watching out for your well-being.</p>
+  </div>
+  <div class="autoall">
+  <h4>Front Collision Warning and Avoidance Assist (FCW <br> and FCA)</h4>
+  <p>Front Collision Warning and Avoidance Assist in the Seltos are <br> your vigilant guardians, working tirelessly to prevent accidents <br> and ensure your security on every drive.</p>
+  </div>
+  </div>
+
+
+
+  <div class="slider-frame">
+    <div class="side_image">
+      <div class="img-container">
+        <div class="video2">  
+        <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/adass/video/smart2560800.mp4"  width="100%" controls autoplay loop muted ></video>
+      </div>
+    </div>
+    <div class="video2">  
+      <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/adass/video/ADAS_2560800.mp4"  width="100%" controls autoplay loop muted ></video>
+    </div>
+      <div class="img-container">
+        <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/adass/ad2.jpg" height="25%" width="100%" alt="">
+      </div>
+      <div class="img-container">
+        <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/adass/ad3.jpg" height="25%" width="100%" alt="">
+      </div>
+
+      <div class="img-container">
+        <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/selto-teaser/adass/video/smart2560800.mp4"  width="100%" controls autoplay loop muted ></video>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="para2">
+      <h3 style="color: gray;">Safety</h3>
+      <h1>Unparalleled safety as standard.</h1>
+      <p>The new Seltos features a comprehensive range of 15 Robust Hi-Safety advanced features as part of its standard safety kit, allowing <br> you to stay in control and respond to sudden impacts swiftly.</p>
+    </div>
+    <div class="auto">  
+    <div class="autoall">
+    <h4>360º Camera with Blind View Monitor in Cluster </h4>
+    <p>With the 360º Camera and Blind View Monitor, master the <br> trickiest of parking spots with precision and confidence.</p>
+    </div>
+    <div class="autoall">
+    <h4>6 Airbags</h4>
+    <p>Our commitment to your well-being extends in all directions, <br> ensuring peace of mind for you and your loved ones.</p>
+    </div>
+    <div class="autoall">
+    <h4>Electronic Stability Control (ESC), Hill Assist Control  <br>(HAC) & Vehicle Stability Management (VSM)</h4>
+    <p>Elevate your driving confidence with Electronic Stability <br> Control, Hill Assist Control, and Vehicle Stability Management. <br> These ensure your journeys are secure and your experiences <br> are unforgettable.</p>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="slider-frame">
+      <div class="side_image">
+        <div class="video2">  
+          <video src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/safety/video/tocuchdisplay.mp4"  width="100%" controls autoplay loop muted ></video>
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/safety/airbags.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/safety/esc-hsc-vsm.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/safety/wheel.jpg" height="25%" width="100%" alt="">
+        </div>
+        <div class="img-container">
+          <img src="https://www.kia.com/content/dam/kia2/in/en/our-vehicles/showroom/seltos-new/safety/airbags.jpg" height="25%" width="100%" alt="">
+        </div>
+      </div>
+      </div>
+        
+
+
+
+       <div class="seltoninfo">   
+      <div class="info">
+        <p> <b> The updated Seltos sticks <br> to its core strengths of <br> looking very sporty while <br> now offering even more <br> features in the cabin.</b></p>
+      </div>
+      <div  class="info" >
+        <p> <b>In terms of creature <br> comforts, the Seltos has <br> a long list of features on <br> offer. </b></p>
+      </div >
+      <div class="info">
+        <p><b>One of the most <br> impressive aspects was <br> its agility in city traffic.</b> </p>
+      </div>
+      <div class="info">
+        <p> <b>Seltos’s dashboard now <br> looks sleeker and more <br> modern with the dual- <br>screen setup which look <br> and feel premium.</b> </p>
+      </div>
+    </div>
+
+
+    <div class="allsel">
+
+    <div class="seltoninfo">
+      <div>
+        <img class="companylogo" src="https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/sonet/showroom/media/seltos/HdAuto.png" width="100%" alt=""><br>
+        <div class="paragraph"> 
+        <p>Seltos' success in the India has been <br> fundamentally balanced on a few key <br> factors - stylish visual appeal, tech-loaded <br> cabin and a largely capable powertrain. </p>
+        </div>
+      </div>
+    <div>
+      <img class="companylogo" src="https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/sonet/showroom/media/seltos/log.png" width="80%" alt=""><br>
+      <div class="paragraph">  
+      <p>Seltos' success in the India has been <br> fundamentally balanced on a few key <br> factors - stylish visual appeal, tech-loaded <br> cabin and a largely capable powertrain. </p>
+    </div>
+    </div>
+  <div>
+    <img class="companylogo" src="https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/sonet/showroom/media/seltos/Rushlane.png" width="80%" alt=""><br>
+    <div class="paragraph"> 
+    <p>Seltos' success in the India has been <br> fundamentally balanced on a few key <br> factors - stylish visual appeal, tech-loaded <br> cabin and a largely capable powertrain. </p>
+    </div>
+  </div>
+<div>
+  <img class="companylogo" src="https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/sonet/showroom/media/seltos/Carwale.png" width="80%" alt=""><br>
+  <div class="paragraph"> 
+  <p>Seltos' success in the India has been <br> fundamentally balanced on a few key <br> factors - stylish visual appeal, tech-loaded <br> cabin and a largely capable powertrain. </p>
+  </div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+  <p>Read Article ></p>
+<div>
+  <p>Read Article ></p>
+</div>
+<div>
+  <p>Read Article ></p>
+</div>
+<div>
+  <p>Read Article ></p>
+</div>
+</div>
+
+<div class="maincontainer">
+<div class="container">
+  <div class="header">
+      <h1>HTK</h1>
+      <p>&#8377; 12,36,900 Starting MSRP*</p>
+  </div>
+  <div class="colors">
+      <div class="color-circle color1"></div>
+      <div class="color-circle color6"></div>
+      <div class="color-circle color3"></div>
+      <div class="color-circle color4"></div>
+      <div class="color-circle color5"></div>
+  </div>
+  <div class="features">
+      <ul>
+          <li>6 Airbags (Front, Side, and Curtain Airbags)</li>
+          <li>ESC, VSM, and HAC</li>
+          <li>All Wheel Disc Brakes</li>
+          <li>Highline Tire Pressure Monitoring System</li>
+          <li>20.32 cm (8.0”) Touchscreen with Wireless Android Auto and Apple Carplay</li>
+          <li>Full Digital Cluster with 10.5 cm (4.2") Color TFT MID</li>
+          <li>Rear Door Sunshade Curtain</li>
+      </ul>
+  </div>
+  <div class="footer">
+      <span>Configure ></span>  <span>Specs ></span>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="header">
+      <h1>HTK</h1>
+      <p>&#8377; 12,36,900 Starting MSRP*</p>
+  </div>
+  <div class="colors">
+      <div class="color-circle color1"></div>
+      <div class="color-circle color6"></div>
+      <div class="color-circle color3"></div>
+      <div class="color-circle color4"></div>
+      <div class="color-circle color5"></div>
+  </div>
+  <div class="features">
+      <ul>
+          <li>6 Airbags (Front, Side, and Curtain Airbags)</li>
+          <li>ESC, VSM, and HAC</li>
+          <li>All Wheel Disc Brakes</li>
+          <li>Highline Tire Pressure Monitoring System</li>
+          <li>20.32 cm (8.0”) Touchscreen with Wireless Android Auto and Apple Carplay</li>
+          <li>Full Digital Cluster with 10.5 cm (4.2") Color TFT MID</li>
+          <li>Rear Door Sunshade Curtain</li>
+      </ul>
+  </div>
+  <div class="footer">
+      <span>Configure ></span>  <span>Specs ></span>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="header">
+      <h1>HTK</h1>
+      <p>&#8377; 12,36,900 Starting MSRP*</p>
+  </div>
+  <div class="colors">
+      <div class="color-circle color1"></div>
+      <div class="color-circle color6"></div>
+      <div class="color-circle color3"></div>
+      <div class="color-circle color4"></div>
+      <div class="color-circle color5"></div>
+  </div>
+  <div class="features">
+      <ul>
+          <li>6 Airbags (Front, Side, and Curtain Airbags)</li>
+          <li>ESC, VSM, and HAC</li>
+          <li>All Wheel Disc Brakes</li>
+          <li>Highline Tire Pressure Monitoring System</li>
+          <li>20.32 cm (8.0”) Touchscreen with Wireless Android Auto and Apple Carplay</li>
+          <li>Full Digital Cluster with 10.5 cm (4.2") Color TFT MID</li>
+          <li>Rear Door Sunshade Curtain</li>
+      </ul>
+  </div>
+  <div class="footer">
+      <span>Configure ></span> <span>Specs ></span>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<div class="selton-new">
+  <img src="https://www.kia.com/content/dam/kia2/in/en/images/our-vehicles/showroom/playlist/seltos-desktop.jpg" height="25%" width="100%" alt="">
+</div>
+
+ <div class="section1">   
+<div class="para2">
+  <h3 style="color: gray;"> CONNECTED CAR TECHNOLOGY</h3>
+</div>
+
+  <div>
+    <img src="https://www.kia.com/in/buy/book-online.html" height="25%" width="100%" alt="">
+  </div>
+  <div>
+    <img src="https://www.kia.com/content/dam/kia2/in/en/images/brochure/seltos/Kia-Seltos-Next-Gen-Brochure-Desktop.pdf" height="25%" width="100%" alt="">
+  </div>
+  <div>
+    <img src="tel://1800-108-5000" height="25%" width="100%" alt="">
+  </div>
+</div>
+</div>
+
+
+
+ 
+<footer style=" background-color: #333; color: white; padding: 20px 40px;">
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+  
+    <div>
+       <h3>KIA</h3>
+       
+      <ul style="list-style: none; padding: 0; margin-top: 20px;">
+        <li><a href="#" style="text-decoration: none; color: white;">VR Showroom</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Configure</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Book Online</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">My Order</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Find a Dealer</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Test Drive</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Become a KIA Partner</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Buy</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="text-decoration: none; color: white;">How it Works</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Configure</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Download Brochure</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Find a Dealer</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">KIA Digi Connect</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Leasing</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Test Drive</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Book Online</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">KIA Certified Pre-Owned</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">EMI Calculator</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Get a Quote</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">My Order</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Owners</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="text-decoration: none; color: white;">KIA Service</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Service and Maintenance</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Service Offerings</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Customer Awareness</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">EV Owners</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">IoT Experience</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Discover KIA</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="text-decoration: none; color: white;">Our Story</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">KIA in India</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Innovation</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">News</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">PBV</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Legal</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="text-decoration: none; color: white;">#ThinkMilesAhead - T&C</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">#ANewWorldOfInspiration T&C</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Sonet Offers - T&C</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Privacy Policy</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Terms of Use</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Online Sales T&C</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Contact Us</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Whistle Blower Policy</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">CSR Policy</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">CSR Plans 2023-24</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">Composition of CSR Committee</a></li>
+        <li><a href="#" style="text-decoration: none; color: white;">KIA Connect Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="smallfoot">
+  <div> 
+ <img  src="https://www.kia.com/content/dam/kia2/in/en/images/common/show-interest.png" height="25px" width="30px" alt="">
+  <li type="none" class="foot">show Interest</li>
+</div>
+<div>  
+  <img src="https://www.kia.com/content/dam/kia2/in/en/images/common/test-drive.png" height="25px" width="30px"  alt="">
+  <li type="none" class="foot">Test Drive</li>
+</div>
+<div> 
+  <img src="https://www.kia.com/content/dam/kia2/in/en/images/common/get-a-quote.png" height="25px" width="30px"  alt="">
+  <li type="none" class="foot">Get a Quote</li>
+</div>
+<div> 
+  <img src="https://www.kia.com/content/dam/kia2/in/en/images/common/call.png" height="25px" width="30px"  alt="">
+  <li type="none" class="foot">Call</li>
+</div>
+</div>
+</div>
+<script src="kia.js"></script>
 </body>
-<script>
-</script>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="nevbarsec"> 
+  <li type="none" class="nev">SONET</li>
+  <li type="none" class="nev">CARENS</li>
+  <li type="none" class="nev">SELTOS</li>
+  <li type="none" class="nev">EV6</li>
+  <li type="none" class="nev">CARNIVAL</li>
+  <li type="none" class="nev">EV9</li> 
+  <li type="none" class="nev">SYROS</li> 
+</div> -->
+
+
+
+   
